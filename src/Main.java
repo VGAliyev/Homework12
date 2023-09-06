@@ -29,8 +29,8 @@ public class Main {
         }
 
         System.out.println(swordLords.hashCode());
-        System.out.println(swordLords.toString());
-        System.out.println(frigatDrivers.toString());
+        System.out.println(swordLords);
+        System.out.println(frigatDrivers);
         System.out.println(frigatDrivers.hashCode());
     }
 }

@@ -27,6 +27,7 @@ public class Book {
         this.bookYear = year;
     }
 
+    @Override
     public String toString() {
         return this.bookName + ", написана " + this.bookAuthor.toString() + " и издана в " + this.bookYear + " году.";
     }
