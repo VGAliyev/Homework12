@@ -20,5 +20,17 @@ public class Main {
                 swordLords.getBookName(),
                 moorcock.getAuthorSurname(),
                 swordLords.getBookYear());
+
+        // Код для тестирования домашки 13
+        if(swordLords.equals(frigatDrivers)) {
+            System.out.println("Книги одинаковы");
+        } else {
+            System.out.println("Книги разные");
+        }
+
+        System.out.println(swordLords.hashCode());
+        System.out.println(swordLords.toString());
+        System.out.println(frigatDrivers.toString());
+        System.out.println(frigatDrivers.hashCode());
     }
 }

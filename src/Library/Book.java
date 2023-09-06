@@ -26,4 +26,20 @@ public class Book {
     public void setBookYear(int year) {
         this.bookYear = year;
     }
+
+    public String toString() {
+        return this.bookName + ", написана " + this.bookAuthor.toString() + " и издана в " + this.bookYear + " году.";
+    }
+
+    public boolean equals(Book book) {
+        if (this.bookAuthor.equals(book.bookAuthor)) {
+            return this.bookName.equals(book.bookName) && this.bookYear == book.bookYear;
+        } else {
+            return false;
+        }
+    }
+
+    public int hashCode() {
+        return 31 * this.bookAuthor.hashCode() + 31 * this.bookName.hashCode() + 31 * this.bookYear;
+    }
 }
