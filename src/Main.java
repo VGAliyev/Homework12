@@ -11,14 +11,16 @@ public class Main {
 
         swordLords.setBookYear(1971);
 
-        // Вывод в консоль для наглядности
-        System.out.printf("Книга %s была написана %s и впервые издана в %d году.\n",
-                frigatDrivers.getBookName(),
-                chuckovsky.getAuthorSurname(),
-                frigatDrivers.getBookYear());
-        System.out.printf("Книга %s была написана %s и впервые издана в %d году.\n",
-                swordLords.getBookName(),
-                moorcock.getAuthorSurname(),
-                swordLords.getBookYear());
+        // Код для тестирования домашки 13
+        if(swordLords.equals(frigatDrivers)) {
+            System.out.println("Книги одинаковы");
+        } else {
+            System.out.println("Книги разные");
+        }
+
+        System.out.println(swordLords.hashCode());
+        System.out.println(swordLords);
+        System.out.println(frigatDrivers);
+        System.out.println(frigatDrivers.hashCode());
     }
 }
